@@ -17,7 +17,9 @@ public class Main {
                 book2.getAuthor().getFirstName() + " " + book2.getAuthor().getLastName() +
                 ", год: " + book2.getPublicationYear());
 
-        book1.setPublicationYear(1870);
-        System.out.println("Обновленная книга 1: " + book1.getTitle() + ", год: " + book2.getTitle());
+        // Изменяем год публикации одной из книг
+        book2.setChangePublicationYear(1867);
+        System.out.println("Обновленная информация о книге 2: " + book2.getTitle() +
+                ", год: " + book2.getPublicationYear());
     }
 }
